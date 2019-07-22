@@ -1,0 +1,157 @@
+\documentclass{article}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\begin{document}
+
+<<>>=
+set.seed(29010719)
+names <- c(LETTERS, letters)
+n <- length(names)
+aff <- sapply(names, function(x){paste("U", x, sep = "")})
+
+a <- as.character(sample(aff, n, replace = TRUE))
+b <- as.character(c(sample(aff, n - 8, replace = TRUE), rep(NA, 8)))
+c <- as.character(c(sample(aff, n - 20, replace = TRUE), rep(NA, 20)))
+
+data <- data.frame(names, a, b, c)
+
+
+for (i in 1:32) {
+  if (data[i,1] == data[i,2] | data[i,1] == data[i,3] | data[i,2] == data[i,3]) {
+    print(i)
+  }
+}
+
+for (i in 1:44) {
+  if (data[i,1] == data[i,2]) {
+    print(i)
+  }
+}
+
+data[11, 3] = "UZ"
+data <- data[sample(1:n), ]
+
+AutoAff <- function(X, aff1, aff2, aff3) {
+  mat <- as.matrix(X[, c(aff1, aff2, aff3)])
+  aff <- na.exclude(unique(as.character(as.vector(t(mat)))))
+  n.aff <- length(aff)
+  aff <- aff[1:n.aff]
+  
+  for (i in 1:dim(X)[1]) {
+    aa <- which(aff == mat[i, 1])
+    bb <- which(aff == mat[i, 2])
+    cc <- which(aff == mat[i, 3])
+    if (length(bb) != 0){
+      if (length(cc) == 0) {
+        mat[i, 1] <- aff[min(c(aa, bb))]
+        mat[i, 2] <- aff[max(c(aa, bb))]
+      }
+      if (length(cc) != 0) {
+        order <- sort(c(aa, bb, cc))
+        mat[i, 1] <- aff[order[1]]
+        mat[i, 2] <- aff[order[2]]
+        mat[i, 3] <- aff[order[3]]
+      }
+    }
+  }
+  
+  data[, aff1] <- mat[, 1]
+  data[, aff2] <- mat[, 2]
+  data[, aff3] <- mat[, 3]
+  
+  return(list(affilliations = aff, count = n.aff, data = data))
+}
+
+result <- AutoAff(data, "a", "b", "c")
+data <- result$data
+@
+
+\Sexpr{data$names[1]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[1])}, \Sexpr{which(result$affilliations == data$b[1])}, \Sexpr{which(result$affilliations == data$c[1])}},
+\Sexpr{data$names[2]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[2])}, \Sexpr{which(result$affilliations == data$b[2])}, \Sexpr{which(result$affilliations == data$c[2])}},
+\Sexpr{data$names[3]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[3])}, \Sexpr{which(result$affilliations == data$b[3])}, \Sexpr{which(result$affilliations == data$c[3])}},
+\Sexpr{data$names[4]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[4])}, \Sexpr{which(result$affilliations == data$b[4])}, \Sexpr{which(result$affilliations == data$c[4])}},
+\Sexpr{data$names[5]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[5])}, \Sexpr{which(result$affilliations == data$b[5])}, \Sexpr{which(result$affilliations == data$c[5])}},
+\Sexpr{data$names[6]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[6])}, \Sexpr{which(result$affilliations == data$b[6])}, \Sexpr{which(result$affilliations == data$c[6])}},
+\Sexpr{data$names[7]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[7])}, \Sexpr{which(result$affilliations == data$b[7])}, \Sexpr{which(result$affilliations == data$c[7])}},
+\Sexpr{data$names[8]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[8])}, \Sexpr{which(result$affilliations == data$b[8])}, \Sexpr{which(result$affilliations == data$c[8])}},
+\Sexpr{data$names[9]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[9])}, \Sexpr{which(result$affilliations == data$b[9])}, \Sexpr{which(result$affilliations == data$c[9])}},
+\Sexpr{data$names[10]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[10])}, \Sexpr{which(result$affilliations == data$b[10])}, \Sexpr{which(result$affilliations == data$c[10])}},
+\Sexpr{data$names[11]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[11])}, \Sexpr{which(result$affilliations == data$b[11])}, \Sexpr{which(result$affilliations == data$c[11])}},
+\Sexpr{data$names[12]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[12])}, \Sexpr{which(result$affilliations == data$b[12])}, \Sexpr{which(result$affilliations == data$c[12])}},
+\Sexpr{data$names[13]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[13])}, \Sexpr{which(result$affilliations == data$b[13])}, \Sexpr{which(result$affilliations == data$c[13])}},
+\Sexpr{data$names[14]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[14])}, \Sexpr{which(result$affilliations == data$b[14])}, \Sexpr{which(result$affilliations == data$c[14])}},
+\Sexpr{data$names[15]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[15])}, \Sexpr{which(result$affilliations == data$b[15])}, \Sexpr{which(result$affilliations == data$c[15])}},
+\Sexpr{data$names[16]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[16])}, \Sexpr{which(result$affilliations == data$b[16])}, \Sexpr{which(result$affilliations == data$c[16])}},
+\Sexpr{data$names[17]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[17])}, \Sexpr{which(result$affilliations == data$b[17])}, \Sexpr{which(result$affilliations == data$c[17])}},
+\Sexpr{data$names[18]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[18])}, \Sexpr{which(result$affilliations == data$b[18])}, \Sexpr{which(result$affilliations == data$c[18])}},
+\Sexpr{data$names[19]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[19])}, \Sexpr{which(result$affilliations == data$b[19])}, \Sexpr{which(result$affilliations == data$c[19])}},
+\Sexpr{data$names[20]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[20])}, \Sexpr{which(result$affilliations == data$b[20])}, \Sexpr{which(result$affilliations == data$c[20])}},
+\Sexpr{data$names[21]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[21])}, \Sexpr{which(result$affilliations == data$b[21])}, \Sexpr{which(result$affilliations == data$c[21])}},
+\Sexpr{data$names[22]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[22])}, \Sexpr{which(result$affilliations == data$b[22])}, \Sexpr{which(result$affilliations == data$c[22])}},
+\Sexpr{data$names[23]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[23])}, \Sexpr{which(result$affilliations == data$b[23])}, \Sexpr{which(result$affilliations == data$c[23])}},
+\Sexpr{data$names[24]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[24])}, \Sexpr{which(result$affilliations == data$b[24])}, \Sexpr{which(result$affilliations == data$c[24])}},
+\Sexpr{data$names[25]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[25])}, \Sexpr{which(result$affilliations == data$b[25])}, \Sexpr{which(result$affilliations == data$c[25])}},
+\Sexpr{data$names[26]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[26])}, \Sexpr{which(result$affilliations == data$b[26])}, \Sexpr{which(result$affilliations == data$c[26])}},
+\Sexpr{data$names[27]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[27])}, \Sexpr{which(result$affilliations == data$b[27])}, \Sexpr{which(result$affilliations == data$c[27])}},
+\Sexpr{data$names[28]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[28])}, \Sexpr{which(result$affilliations == data$b[28])}, \Sexpr{which(result$affilliations == data$c[28])}},
+\Sexpr{data$names[29]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[29])}, \Sexpr{which(result$affilliations == data$b[29])}, \Sexpr{which(result$affilliations == data$c[29])}},
+\Sexpr{data$names[30]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[30])}, \Sexpr{which(result$affilliations == data$b[30])}, \Sexpr{which(result$affilliations == data$c[30])}},
+\Sexpr{data$names[31]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[31])}, \Sexpr{which(result$affilliations == data$b[31])}, \Sexpr{which(result$affilliations == data$c[31])}},
+\Sexpr{data$names[32]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[32])}, \Sexpr{which(result$affilliations == data$b[32])}, \Sexpr{which(result$affilliations == data$c[32])}},
+\Sexpr{data$names[33]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[33])}, \Sexpr{which(result$affilliations == data$b[33])}, \Sexpr{which(result$affilliations == data$c[33])}},
+\Sexpr{data$names[34]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[34])}, \Sexpr{which(result$affilliations == data$b[34])}, \Sexpr{which(result$affilliations == data$c[34])}},
+\Sexpr{data$names[35]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[35])}, \Sexpr{which(result$affilliations == data$b[35])}, \Sexpr{which(result$affilliations == data$c[35])}},
+\Sexpr{data$names[36]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[36])}, \Sexpr{which(result$affilliations == data$b[36])}, \Sexpr{which(result$affilliations == data$c[36])}},
+\Sexpr{data$names[37]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[37])}, \Sexpr{which(result$affilliations == data$b[37])}, \Sexpr{which(result$affilliations == data$c[37])}},
+\Sexpr{data$names[38]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[38])}, \Sexpr{which(result$affilliations == data$b[38])}, \Sexpr{which(result$affilliations == data$c[38])}},
+\Sexpr{data$names[39]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[39])}, \Sexpr{which(result$affilliations == data$b[39])}, \Sexpr{which(result$affilliations == data$c[39])}},
+\Sexpr{data$names[40]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[40])}, \Sexpr{which(result$affilliations == data$b[40])}, \Sexpr{which(result$affilliations == data$c[40])}},
+\Sexpr{data$names[41]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[41])}, \Sexpr{which(result$affilliations == data$b[41])}, \Sexpr{which(result$affilliations == data$c[41])}},
+\Sexpr{data$names[42]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[42])}, \Sexpr{which(result$affilliations == data$b[42])}, \Sexpr{which(result$affilliations == data$c[42])}},
+\Sexpr{data$names[43]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[43])}, \Sexpr{which(result$affilliations == data$b[43])}, \Sexpr{which(result$affilliations == data$c[43])}},
+\Sexpr{data$names[44]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[44])}, \Sexpr{which(result$affilliations == data$b[44])}, \Sexpr{which(result$affilliations == data$c[44])}},
+\Sexpr{data$names[45]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[45])}, \Sexpr{which(result$affilliations == data$b[45])}, \Sexpr{which(result$affilliations == data$c[45])}},
+\Sexpr{data$names[46]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[46])}, \Sexpr{which(result$affilliations == data$b[46])}, \Sexpr{which(result$affilliations == data$c[46])}},
+\Sexpr{data$names[47]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[47])}, \Sexpr{which(result$affilliations == data$b[47])}, \Sexpr{which(result$affilliations == data$c[47])}},
+\Sexpr{data$names[48]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[48])}, \Sexpr{which(result$affilliations == data$b[48])}, \Sexpr{which(result$affilliations == data$c[48])}},
+\Sexpr{data$names[49]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[49])}, \Sexpr{which(result$affilliations == data$b[49])}, \Sexpr{which(result$affilliations == data$c[49])}},
+\Sexpr{data$names[50]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[50])}, \Sexpr{which(result$affilliations == data$b[50])}, \Sexpr{which(result$affilliations == data$c[50])}},
+\Sexpr{data$names[51]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[51])}, \Sexpr{which(result$affilliations == data$b[51])}, \Sexpr{which(result$affilliations == data$c[51])}},
+\Sexpr{data$names[52]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[52])}, \Sexpr{which(result$affilliations == data$b[52])}, \Sexpr{which(result$affilliations == data$c[52])}},
+\Sexpr{data$names[53]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[53])}, \Sexpr{which(result$affilliations == data$b[53])}, \Sexpr{which(result$affilliations == data$c[53])}},
+\Sexpr{data$names[54]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[54])}, \Sexpr{which(result$affilliations == data$b[54])}, \Sexpr{which(result$affilliations == data$c[54])}},
+\Sexpr{data$names[55]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[55])}, \Sexpr{which(result$affilliations == data$b[55])}, \Sexpr{which(result$affilliations == data$c[55])}},
+\Sexpr{data$names[56]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[56])}, \Sexpr{which(result$affilliations == data$b[56])}, \Sexpr{which(result$affilliations == data$c[56])}},
+\Sexpr{data$names[57]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[57])}, \Sexpr{which(result$affilliations == data$b[57])}, \Sexpr{which(result$affilliations == data$c[57])}},
+\Sexpr{data$names[58]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[58])}, \Sexpr{which(result$affilliations == data$b[58])}, \Sexpr{which(result$affilliations == data$c[58])}},
+\Sexpr{data$names[59]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[59])}, \Sexpr{which(result$affilliations == data$b[59])}, \Sexpr{which(result$affilliations == data$c[59])}},
+\Sexpr{data$names[60]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[60])}, \Sexpr{which(result$affilliations == data$b[60])}, \Sexpr{which(result$affilliations == data$c[60])}},
+\Sexpr{data$names[61]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[61])}, \Sexpr{which(result$affilliations == data$b[61])}, \Sexpr{which(result$affilliations == data$c[61])}},
+\Sexpr{data$names[62]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[62])}, \Sexpr{which(result$affilliations == data$b[62])}, \Sexpr{which(result$affilliations == data$c[62])}},
+\Sexpr{data$names[63]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[63])}, \Sexpr{which(result$affilliations == data$b[63])}, \Sexpr{which(result$affilliations == data$c[63])}},
+\Sexpr{data$names[64]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[64])}, \Sexpr{which(result$affilliations == data$b[64])}, \Sexpr{which(result$affilliations == data$c[64])}},
+\Sexpr{data$names[65]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[65])}, \Sexpr{which(result$affilliations == data$b[65])}, \Sexpr{which(result$affilliations == data$c[65])}},
+\Sexpr{data$names[66]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[66])}, \Sexpr{which(result$affilliations == data$b[66])}, \Sexpr{which(result$affilliations == data$c[66])}},
+\Sexpr{data$names[67]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[67])}, \Sexpr{which(result$affilliations == data$b[67])}, \Sexpr{which(result$affilliations == data$c[67])}},
+\Sexpr{data$names[68]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[68])}, \Sexpr{which(result$affilliations == data$b[68])}, \Sexpr{which(result$affilliations == data$c[68])}},
+\Sexpr{data$names[69]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[69])}, \Sexpr{which(result$affilliations == data$b[69])}, \Sexpr{which(result$affilliations == data$c[69])}},
+\Sexpr{data$names[70]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[70])}, \Sexpr{which(result$affilliations == data$b[70])}, \Sexpr{which(result$affilliations == data$c[70])}},
+\Sexpr{data$names[71]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[71])}, \Sexpr{which(result$affilliations == data$b[71])}, \Sexpr{which(result$affilliations == data$c[71])}},
+\Sexpr{data$names[72]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[72])}, \Sexpr{which(result$affilliations == data$b[72])}, \Sexpr{which(result$affilliations == data$c[72])}},
+\Sexpr{data$names[73]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[73])}, \Sexpr{which(result$affilliations == data$b[73])}, \Sexpr{which(result$affilliations == data$c[73])}},
+\Sexpr{data$names[74]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[74])}, \Sexpr{which(result$affilliations == data$b[74])}, \Sexpr{which(result$affilliations == data$c[74])}},
+\Sexpr{data$names[75]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[75])}, \Sexpr{which(result$affilliations == data$b[75])}, \Sexpr{which(result$affilliations == data$c[75])}},
+\Sexpr{data$names[76]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[76])}, \Sexpr{which(result$affilliations == data$b[76])}, \Sexpr{which(result$affilliations == data$c[76])}},
+\Sexpr{data$names[77]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[77])}, \Sexpr{which(result$affilliations == data$b[77])}, \Sexpr{which(result$affilliations == data$c[77])}},
+\Sexpr{data$names[78]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[78])}, \Sexpr{which(result$affilliations == data$b[78])}, \Sexpr{which(result$affilliations == data$c[78])}},
+\Sexpr{data$names[79]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[79])}, \Sexpr{which(result$affilliations == data$b[79])}, \Sexpr{which(result$affilliations == data$c[79])}},
+\Sexpr{data$names[80]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[80])}, \Sexpr{which(result$affilliations == data$b[80])}, \Sexpr{which(result$affilliations == data$c[80])}},
+\Sexpr{data$names[81]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[81])}, \Sexpr{which(result$affilliations == data$b[81])}, \Sexpr{which(result$affilliations == data$c[81])}},
+\Sexpr{data$names[82]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[82])}, \Sexpr{which(result$affilliations == data$b[82])}, \Sexpr{which(result$affilliations == data$c[82])}},
+\Sexpr{data$names[83]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[83])}, \Sexpr{which(result$affilliations == data$b[83])}, \Sexpr{which(result$affilliations == data$c[83])}},
+\Sexpr{data$names[84]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[84])}, \Sexpr{which(result$affilliations == data$b[84])}, \Sexpr{which(result$affilliations == data$c[84])}},
+\Sexpr{data$names[85]}\textsuperscript{\Sexpr{which(result$affilliations == data$a[85])}, \Sexpr{which(result$affilliations == data$b[85])}, \Sexpr{which(result$affilliations == data$c[85])}},
+
+
+
+\end{document}
