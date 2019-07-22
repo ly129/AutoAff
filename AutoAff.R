@@ -1,6 +1,6 @@
 # Main program to sort affiliations according to order of appearance
 # Currently set to <=3 affiliations per author
-AutoAff <- function(X, aff1, aff2, aff3, name) {
+AutoAff <- function(X, aff1, aff2, aff3) {
   mat <- as.matrix(X[, c(aff1, aff2, aff3)])
   aff <- na.exclude(unique(as.character(as.vector(t(mat)))))
   n.aff <- length(aff)
@@ -72,9 +72,15 @@ aff.style <- function(first, last, degree, index, latex = FALSE) {
 data <- read.csv("Book1.csv", na.strings = c("", NA)) # Give full path name
 
 # Run main program AutoAff to get the affiliation list
-result <- AutoAff(data, "AFFILIATION.1", "AFFILIATION.2", "AFFILIATION.3", "LAST.NAME")
+result <- AutoAff(data, "AFFILIATION.1", "AFFILIATION.2", "AFFILIATION.3")
 # Add a column of indices to original dataset
 data$index <- result$index
 
 # Get author list with indicies
 aff.style(first = data$FIRST.NAME,last = data$LAST.NAME, degree = data$DEGREES, index = data$index, latex = T)
+
+# Get affiliation list with superscripted indicies
+# Knit in R Markdown
+for (i in 1:result$count) {
+  cat("^", i, "^ ", result$affilliations[i], "\n", sep = "")
+}

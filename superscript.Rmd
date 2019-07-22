@@ -5,4 +5,129 @@ date: '2019-07-21'
 output: word_document
 ---
 
+# Affiliation List:
+
+^1^ Lady Davis Institute for Medical Research, Jewish General Hospital, Montreal, Quebec, Canada
+^2^ Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montreal, Quebec, Canada
+^3^ Lady Davis Institute for Medical Research, Jewish General Hospital, Montréal, Québec, Canada
+^4^ Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montréal, Québec, Canada
+^5^ Department of Mental Health, Bloomberg School of Public Health, Johns Hopkins University, Baltimore, Maryland, USA
+^6^ Department of Psychology, McGill University, Montréal, Québec, Canada
+^7^ Schulich Library of Physical Sciences, Life Sciences, and Engineering, McGill University, Montréal, Québec, Canada 
+^8^ Department of Clinical, Neuro and Developmental Psychology, Amsterdam Public Health Research Institute, Vrije Universiteit, Amsterdam, the Netherlands
+^9^ Hull York Medical School and the Department of Health Sciences, University of York, Heslington, York, United Kingdom
+^10^ Department of Medicine, Department of Health Research and Policy, Department of Biomedical Data Science,  Department of Statistics, Stanford University, Stanford, California, USA
+^11^ Library, Concordia University, Montréal, Québec, Canada
+^12^ Department of Community Health Sciences, University of Calgary
+^13^ Department of Psychiatry, University of Calgary
+^14^ Mathison Centre for Mental Health Research and Education, University of Calgary
+^15^ Department of Medicine, Johns Hopkins University School of Medicine, Baltimore, Maryland, USA
+^16^ Hotchkiss Brain Institute & O'Brien Institute for Public Health
+^17^ Departments of Psychiatry, Clinical Neurosciences, and Community Health Sciences
+^18^ Cumming School of Medicine, University of Calgary
+^19^ Ingram School of Nursing, McGill University, Montréal, Québec, Canada
+^20^ Centre for Nursing Research, Jewish General Hospital, Montréal, Québec, Canada
+^21^ Department of Psychiatry, University of Alberta
+^22^ Alberta Health Services
+^23^ Department of Medicine, University of Calgary
+^24^ Department of Behavioural Medicine, College of Medicine & Health Sciences, Sultan Qaboos University
+^25^ kbo Lech-Mangfall-Klinik für Psychatrie, Psychotherapie und Psychsomatik, Garmisch-Partenkirchen
+^26^ Department of Psychiatry and Psychotherapy, University Hospital Zürich, Zürich Switzerland
+^27^ Harvard university, Boston, Massachussets
+^28^ Lithuanian University of Health Sciences, Kaunas, Lithuania
+^29^ University of Newcastle, Australia
+^30^ Calvary Mater Newcastle, Australia
+^31^ University of Auckland
+^32^ Royal College of Surgeons in Ireland Division of Population Health Sciences
+^33^ Rogosin Institute
+^34^ Alfred Hospital
+^35^ Monash University
+^36^ National Scientific and Technical Research Council (CONICET). Argentina
+^37^ Institute of Pharmacology. School of Medicine. University of Buenos Aires. Argentina
+^38^ Birmingham and Solihull Mental Health Foundation Trust, Birmingham, U.K.
+^39^ University of Birmingham, Birmingham, U.K.
+^40^ School of Psychological Sciences, Monash University
+^41^ Monash Epworth Rehabilitation Research Centre, Epworth HealthCare
+^42^ University of Toronto
+^43^ Sunnybrook Health Sciences Centre
+^44^ National and Kapodistrian University of Athens, 2nd Department of Psychiatry, Attikon General Hospital
+^45^ Institute of Psychiatry, Psychology & Neuroscience, King's College London
+^46^ Department of Psychosomatic Medicine, Center for Internal Medicine and Dermatology, Charite´—Universita¨tsmedizin Berlin, corporate member of Freie Universita¨ t Berlin, Humboldt-Universita¨ t zu Berlin, and Berlin Institute of Health, Berlin, Germany
+^47^ University Health Network, Toronto
+^48^ Department of Psychiatry, University of Toronto
+^49^ Section of Psychological Science, Division of Health Care Research, Center for Public Health Sciences, National Cancer Center
+^50^ Dublin City University
+^51^ The Department of Psychology, Macquarie University, Sydney, Australia
+^52^ Institute of Psychiatry, Department of Biomedical and Specialty Surgical Sciences, University of Ferrara, Ferrara, Italy
+^53^ University Hospital  Psychiatric Unit, Integrated Department of Mental Health and Addictive Behavior, Health Trust, Ferrara, Italy 
+^54^ Department of Medical Psychology
+^55^ Clinic Zugersee, Center for Psychiatry and Psychotherapie, Oberwil-Zug, Switzerland
+^56^ University of Zurich, Zurich, Switzerland
+^57^ Icahn School of Medicine at Mount Sinai
+^58^ Equipa Comunitária de Suporte em Cuidados Paliativos de Sintra, Portugal
+^59^ Department of Psychiatry, Chonnam National University Medical School
+^60^ Chonnam National University Medical School
+^61^ Endocrinology Research Group, Medical Clinic, University Hospital of North Norway, Norway
+^62^ Dep. of Internal Medicine, Kolding Hospital - part of Hospital Lillebaelt, Denmark
+^63^ Department of Psychiatry and Neuropsychology, School for Mental Health and Neuroscience, Maastricht University, Maastricht, The Netherlands
+^64^ Onze Lieve vrouw Gasthuis
+^65^ Victoria University, Victoria, Australia
+^66^ Department of Psychosomatic Medicine and Psychotherapy, University Medical Center Hamburg-Eppendorf, Hamburg, Germany
+^67^ Department of Psychiatry and Psychology, Hospital Clinic, IDIBAPS, CIBERSAM, Barcelona, Spain.
+^68^ Department of Medicine, Institute of Neurscience, University of Barcelona
+^69^ Centro de Biología Celular y Biomedicina. Facultad de Medicina y Ciencia. Universidad San Sebastián. Santiago, Chile
+^70^ Division of Health Care Research, Center for Public Health Sciences, National Cancer Center Japan
+^71^ Lifestyle Medicine, Cooperative Graduate Program, The Jikei University Graduate School of Medicine
+^72^ 2nd Department of Psychiatry, National and Kapodistrian University of Athens, "Attikon" Hospital
+^73^ Department of Dermatology, University Hospital of Brest, Brest, France
+^74^ Department of Medicine, Institute of Neuroscience, University of Barcelona
+^75^ Phoenix Australia
+^76^ University of Melbourne
+^77^ The University of Edinburgh
+^78^ BEZMİALEM VAKIF UNIVERSITY
+^79^ Vilnius University Faculty of Medicine, Clinic of Internal Diseases, Family Medicine and Oncology, Vilnius, Lithuania
+^80^ Consultation Liaison Psychiatry Unit. Hospital Clínico de Barcelona
+^81^ Associate professor, Universidad de Barcelona
+^82^ Instituto de Investigaciones Biomédicas Augusto Pi i Sunyer (IDIBAPS)
+^83^ School of Psychological Sciences, Monash University, Melbourne, Australia
+^84^ Monash Epworth Rehabilitation Research Centre, Epworth Healthcare, Melbourne, Australia
+^85^ Institute of Cardiovascular and Medical Sciences, University of Glasgow
+^86^ Department of psychology, Faculty of Social Sciences, University of Oslo
+^87^ Department of pain management and research, Oslo University Hospital
+^88^ Private Practice for Psychotherapy and Psycho-oncology
+^89^ Division of Psychiatry, University of Edinburgh
+^90^ Robert Fergusson Unit, Royal Edinburgh Hospital, NHS Lothian
+^91^ Department of Psychiatry. Institut de Neuropsiquiatria i Addiccions, Centre Emili Mira, Parc de Salut Mar. Barcelona. Spain.
+^92^ IMIM (Hospital del Mar Medical Research Institute). Barcelona. Spain.
+^93^ Centro de Investigación Biomédica En Red de Salud Mental (CIBERSAM). Barcelona. Spain.
+^94^ Department of Internal Medicine, Federal University of Santa Catarina, Brazil
+^95^ Ankara University Faculty of Medicine Psychiatry Department
+^96^ School of Psychology, The University of Sydney, NSW 2006
+^97^ Département des sciences de la santé, Université du Québec à Chicoutimi (UQAC)
+^98^ 	Centre intersectoriel en santé durable (CISD)
+^99^ Centre de recherche de l'Institut universitaire de cardiologie et de pneumologie de Québec (IUCPQ)
+^100^ University Medical Centre Mainz, Institute of Medical Biostatistics, Epidemiology and Informatics, Mainz, Germany
+^101^ Centre for Women's Mental Health, Royal Women's Hospital, Parkville, Australia
+^102^ Melbourne School of Psychological Sciences, University of Melbourne, Australia
+^103^ University of Edinburgh
+^104^ Université de Montréal, Qc, Canada
+^105^ CHU Sainte-Justine, Montréal, Qc, Canada
+^106^ University of Texas Health Science Center at Houston, Houston, TX. 
+^107^ Santa Casa BH Ensino & Pesquisa, Belo Horizonte, Brazil. 
+^108^ Pécs University, Medical School, Institute of Behavioral Sciences
+^109^ Deakin University, IMPACT Strategic Research Centre and School of Medicine, Barwon Health, Geelong, Vic, Australia
+^110^  Faculty of Health and Medicine, School of Medicine and Public Health, The University of Newcastle, Callaghan, NSW, Australia
+^111^ Department of Psychiatry, University of Melbourne, Royal Melbourne Hospital, Parkville, Vic Australia
+^112^ University of Oxford
+^113^ Neuropsychiatry Unit, Royal Melbourne Hospital, Melbourne, Australia
+^114^ Melbourne Neuropsychiatry Centre, University of Melbourne, Melbourne, Australia
+^115^ Florey Institute of Neuroscience and Mental Health, Melbourne, Australia
+^116^ Department of Child and Adolescent Psychiatry, Kaohsiung Chang Gung Memorial Hospital and Chang Gung University College of Medicine, Kaohsiung, Taiwan
+^117^ Monash University, Melbourne, Australia
+^118^ School of Psychology & Public Health, La Trobe University
+^119^ Department of Medicine, McGill University, Montréal, Québec, Canada
+^120^ Respiratory Epidemiology and Clinical Research Unit, McGill University Health Centre, Montréal, Québec, Canada
+
+# Author List:
+
 Yin Wu, PhD^1,2^; Brooke Levis, MSc^3,4^; Ying Sun, MPH^1^; Ankur Krishnan, MSc^1^; Chen He, MScPH^1,4^; Kira Riehm, MSc^1,5^; Danielle Rice, MSc^1,6^; Marleine Azar, MSc^1,4^; Xin Wei Yan, MSc^1^; Dipika Neupane, BPH^1,4^; Parash Mani Bhandari, BPH^1,4^; Mahrukh Imran, MScPH^1^; Tatiana Sanchez, BSc^1^; Matthew Chiovitti, MISt^1^; Nazanin Saadat, MSc^1^; Jill Boruff, MLIS^7^; Pim Cuijpers, PhD^8^; Simon Gilbody, PhD^9^; Dean McMillan, PhD^9^; John Ioannidis, MD, DSc^10^; Lorie Kloda, PhD^11^; Scott Patten, PhD,MD^12-14^; Ian Shrier, MD, PhD^3,4^; Roy Ziegelstein, MD^15^; Melissa Henry, PhD^1^; Zahinoor Ismail, MD^16-18^; Carmen Loiselle, PhD, RN^19,20^; Nicholas Michell, MD, MSc^21,22^; Marcello Tonelli, MD, MSc, SM^23^; Samir Al-Adawi, PhD,MSc^24^; Anna Beraldi, PhD^25^; Anna P. B. M. Braeken, NA^^; Natalie Büel-Drabe, MD^26^; Adomas Bunevicius, PhD,MD^27,28^; Gregory Carter, PhD^29,30^; Chih-Ken Chen, NA^^; Gary Cheung, PhD,FRANZCP^31^; Kerrie Clover, NA^^; Ronán Conroy, DSc^32^; Gema Costa-Requena, NA^^; Daniel Cukor, PhD^33^; Carlos E. da Rocha e Silva, NA^^; Eli Dabscheck, MBBS^34,35^; Federico Daray, PhD,MD,MSc^36,37^; Jennifer De Souza, PhD^38,39^; Elles Douven, NA^^; Marina Downing, PhD^40,41^; Anthony Feinstein, PhD,MD^42,43^; Panagiotis Ferentinos, PhD,MD^44,45^; Felix Fischer, PhD^46^; Alastair Flint, M.B.,FRCPC,FRANZCP^47,48^; Maiko Fujimori, PhD^49^; Pamela Gallagher, PhD^50^; Milena Gandy, PhD,DClinPsy^51^; Simone Goebel, NA^^; Luigi Grassi, MD^52,53^; Martin Härter, PhD,MD,Dipl.-Psych.^54^; Josef Jenewein, MD^55,56^; Nathalie Jetté, MD,MSc^57^; Miguel Julião, PhD,MD,MSc^58^; Monika Keller, NA^^; Sung-Wan Kim, PhD,MD^59^; Jae-Min Kim, MD, PhD^60^; Marie Kjærgaard, PhD,MD^61,62^; Sebastian Köhler, PhD,MSc,M.A.^63^; Wim Loosman, PhD^64^; Anthony Love, PhD^65^; Bernd Löwe, MD^66^; Rocio Martin-Santos, PhD,MD,MSc^67,68^; Loreto Massardo, MD^69^; Yutaka Matsuoka, PhD,MD^70,71^; Anja Mehnert  , NA^^; Ioannis Michopoulos, PhD,MD^72^; Laurent Misery, PhD,MD^73^; Ricard Navines, PhD,MD^67,74^; Meaghan O'Donnell, PhD^75,76^; Suzanne O'Rourke, PhD^77^; Ahmet Öztürk, MD^78^; Jurate Peceliuniene, PhD,MD^79^; Luis Pintor, PhD,MD^80-82^; Jennie Ponsford, PhD^83,84^; Terence Quinn, MD,MBCHB^85^; Silje Reme, PhD^86,87^; Katrin Reuter, PhD^88^; Alasdair Rooney, PhD,MD^89,90^; Roberto Sánchez-González, PhD,MD^91-93^; Marcelo Schwarzbold, PhD,MD^94^; Vesile Senturk Cankorur, PhD,MD,MSc^95^; Juwita Shaaban, NA^^; Louise Sharpe, PhD^96^; Micheal Sharpe, NA^^; Sébastien Simard, PhD^97-99^; Susanne Singer, PhD,MSc,Dipl.-Psych.^100^; Lesley Stafford, PhD^101,102^; Jon Stone, PhD,MB ChB^103^; Serge Sultan, PhD^104,105^; Antonio Teixeira, PhD,MD^106,107^; Istvan Tiringer, PhD,MD^108^; Ka-Yee Tung, NA^^; Alyna Turner, PhD^109-111^; Jane Walker, PhD^112^; Mark Walterfang, PhD,MD^113-115^; Liang-Jen Wang, PhD,MD^116^; Jennifer White, PhD^117^; Dana Wong, PhD^40,118^; NA NA, NA^^; Andrea Benedetti, PhD^4,119,120^; Brett Thombs, PhD^^; NA NA, NA^^; NA NA, NA^^; NA NA, NA^^; Dr. Jurate Butnoriene who did the data collection and analysis as part of her PhD thesis has sadly passed away six months ago.  Create a write up in acknowledgements. NA, NA^^; Dr. Robertas Bunevicius who was the PI and last authro for both studeis passed away in 2014 NA, NA^^;
