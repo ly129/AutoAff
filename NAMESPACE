@@ -1,0 +1,5 @@
+exportPattern("^[[:alpha:]]+")
+
+import("methods")
+
+export(AutoAff, AffStyle)

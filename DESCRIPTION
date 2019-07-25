@@ -1,0 +1,11 @@
+Package: AutoAff
+Type: Package
+Title: Automatic Affiliation
+Version: 0.1.0
+Author: Yi Lian
+Maintainer: Yi Lian <yi.lian@mail.mcgill.ca>
+Description: Automatic management for large number of authors and affiliations
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
