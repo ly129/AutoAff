@@ -17,6 +17,7 @@ for (i in 1:7) {
     authors[20*(i-1) + j, ] <- c(sample(aff, size = 7-i, replace = FALSE), rep("", i-1))
   }
 }
+authors <- authors[sample(1:n), ]
 
 authors <- as.data.frame(authors)
 names <- sapply(1:140, FUN = function(x) {paste("Author", x)})
