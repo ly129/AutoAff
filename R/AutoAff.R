@@ -1,5 +1,4 @@
 # Main program to sort affiliations according to order of appearance
-# Currently set to <=3 affiliations per author
 getIndex <- function(x, aff) {
   n <- length(x)
   indices <- NULL
