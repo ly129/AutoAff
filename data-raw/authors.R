@@ -25,7 +25,7 @@ authors$names <- names
 authors$first <- sapply(1:140, FUN = function(x) {paste("First", x)})
 authors$middle <- sapply(1:140, FUN = function(x) {paste("Middle", x)})
 authors$last <- sapply(1:140, FUN = function(x) {paste("Last", x)})
-authors <- authors[, c(8,9,10,7,1,2,3,4,5,6)]
+authors <- authors[, c(7,8,9,10,1,2,3,4,5,6)]
 names(authors) <- c("Name", "First", "Middle", "Last", "aff1", "aff2", "aff3", "aff4", "aff5", "aff6")
 authors$Degree <- sample(c("BA", "MSc", "PhD"), size = n, replace = TRUE)
 

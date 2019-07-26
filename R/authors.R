@@ -1,13 +1,13 @@
 #' A demo dataset
 #'
-#' A fake data frame containing 100 authors with up to 6 affiliations.
+#' A fake data frame containing 140 authors with up to 6 affiliations.
 #' 
 #' 
 #' @name authors
 #' @keywords datasets
 #' @usage data(authors)
 #'
-#' @format A data frame with 100 rows and 7 variables:
+#' @format A data frame with 140 rows and 11 variables:
 #' \describe{
 #'   \item{Name}{Author's name}
 #'   \item{aff1}{First affiliation}

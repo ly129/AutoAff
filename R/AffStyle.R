@@ -11,7 +11,7 @@
 #' @param index \code{index} acquired from \code{AutoAff} function. See 'Value' in \link{AutoAff}.
 #' @param template A template indicating the style of output. See 'Details' and 'Examples'.
 #' 
-#' @details Currently supporting two styles but growing.
+#' @details
 #' 
 #' \code{template} represents a style specified by the user.
 #' 
@@ -29,9 +29,9 @@
 #' 
 #' ^foo^: if 'foo' needs to be superscripted
 #' 
-#' Any other characters can be used based on the user's need.
+#' Any other characters can be used based on the user's need. For example, spaces can be added between first and last names, colons ';' can be added at the end as separators.
 #' 
-#' @details Styles that include superscripted indices require the use of R Markdown. The output for these styles are R Markdown syntax (text between ^^ will be superscipts after knitting.)
+#' @details Styles that include superscripts/subscripts require the use of R Markdown. The output for these styles are R Markdown syntax (text between ^^ will be superscipts after knitting.)
 #' 
 #' @return The function returns a text string that is either ready to be pasted into your manuscript (without superscripts) or need to be copied to R Markdown and knitted (with superscripts).
 #' 

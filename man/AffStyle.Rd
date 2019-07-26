@@ -30,8 +30,6 @@ The function returns a text string that is either ready to be pasted into your m
 \code{AffStyle} facilitates the generation of long author list in different styles based on the requirements of research journals.
 }
 \details{
-Currently supporting two styles but growing.
-
 \code{template} represents a style specified by the user.
 
 f: first name
@@ -48,9 +46,9 @@ i: index (acquired by \code{AutoAff})
 
 ^foo^: if 'foo' needs to be superscripted
 
-Any other characters can be used based on the user's need.
+Any other characters can be used based on the user's need. For example, spaces can be added between first and last names, colons ';' can be added at the end as separators.
 
-Styles that include superscripted indices require the use of R Markdown. The output for these styles are R Markdown syntax (text between ^^ will be superscipts after knitting.)
+Styles that include superscripts/subscripts require the use of R Markdown. The output for these styles are R Markdown syntax (text between ^^ will be superscipts after knitting.)
 }
 \examples{
 result <- AutoAff(authors, c("aff1", "aff2", "aff3", "aff4", "aff5", "aff6"))
