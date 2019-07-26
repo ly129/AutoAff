@@ -2,18 +2,26 @@
 % Please edit documentation in R/AffStyle.R
 \name{AffStyle}
 \alias{AffStyle}
-\title{Automatic generation of author list with different styles.}
+\title{Automatic generation of author list with customized styles.}
 \usage{
-AffStyle(name, degree, index, style)
+AffStyle(X, first, last, middle, name, degree, index, template)
 }
 \arguments{
-\item{name}{Authors' names}
+\item{X}{A user-supplied data frame with columns containing the authors' affiliations.}
 
-\item{degree}{Authors' title (PhD, MS, etc..)}
+\item{first}{Name of the variable containing the authors' first names. See 'Examples'.}
+
+\item{last}{Name of the variable containing the authors' last names. See 'Examples'.}
+
+\item{middle}{Name of the variable containing the authors' middle names. See 'Examples'.}
+
+\item{name}{Name of the variable containing the authors' full names. See 'Examples'.}
+
+\item{degree}{Name of the variable containing the authors' title (PhD, MS, etc..). See 'Examples'.}
 
 \item{index}{\code{index} acquired from \code{AutoAff} function. See 'Value' in \link{AutoAff}.}
 
-\item{style}{Style of output. See 'Details'.}
+\item{template}{A template indicating the style of output. See 'Details' and 'Examples'.}
 }
 \value{
 The function returns a text string that is either ready to be pasted into your manuscript (without superscripts) or need to be copied to R Markdown and knitted (with superscripts).
@@ -24,14 +32,30 @@ The function returns a text string that is either ready to be pasted into your m
 \details{
 Currently supporting two styles but growing.
 
-plain: John Doe, MSc 1-3; Jane Doe, PhD 1,3-5; ..
+\code{template} represents a style specified by the user.
 
-superscript: John Doe, MSc^1-3^; Jane Doe, PhD^1,3-5^; ..
+f: first name
 
-Styles that require superscripted indices require the use of R Markdown. The output for these styles are R Markdown syntax (text between ^^ will be superscipts after knitting.)
+m: middle name
+
+l: last name
+
+n: full name
+
+d: degree
+
+i: index (acquired by \code{AutoAff})
+
+^foo^: if 'foo' needs to be superscripted
+
+Any other characters can be used based on the user's need.
+
+Styles that include superscripted indices require the use of R Markdown. The output for these styles are R Markdown syntax (text between ^^ will be superscipts after knitting.)
 }
 \examples{
 result <- AutoAff(authors, c("aff1", "aff2", "aff3", "aff4", "aff5", "aff6"))
-AffStyle(name = authors$Name, degree = authors$Degree, index = result$index, style = "plain")
+
+template <- "f m l, d^i^;"
+AffStyle(X = authors, first = "First", middle = "Middle", last = "Last", degree = "Degree", index = result$index, template = template)
 
 }
