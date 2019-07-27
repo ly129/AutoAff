@@ -9,6 +9,7 @@ getIndex <- function(x, aff) {
 }
 
 hyphen <- function(x) {
+  x <- unique(x)
   n <- length(x)
   
   if (n == 0) p <- NA
@@ -91,7 +92,7 @@ AutoAff <- function(X, affiliation) {
   n.aut <- dim(mat)[1]
   for (i in 1:n.aut) {
     for (j in 1:n.per) {
-      if (mat[i, j] == "") {mat[i, j] <- NA}
+      if (!is.na(mat[i, j]) & (mat[i, j] == "" | mat[i, j] == " ")) {mat[i, j] <- NA}
     }
   }
   aff <- na.exclude(unique(as.character(as.vector(t(mat)))))
