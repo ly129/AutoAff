@@ -80,8 +80,12 @@ hyphen <- function(x) {
 #' \item{missing}{Number of authors with no affiliations}
 #' 
 #' @examples
-#' result <- AutoAff(authors, c("aff1", "aff2", "aff3", "aff4", "aff5", "aff6"))
+#' result <- AutoAff(X = authors,
+#'                   affiliation = c("aff1", "aff2", "aff3", "aff4", "aff5", "aff6"))
 #' result
+#' 
+#' # R Markdown syntax
+#' result$rmd
 #' 
 #' @export
 

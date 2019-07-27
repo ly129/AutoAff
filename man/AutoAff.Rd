@@ -29,7 +29,11 @@ Empty cells (for those authors with fewer affiliations) in \code{X} have to be e
 Copy and paste \code{rmd} in \code{result} into R Markdown and knit to Microsoft Word to get affiliation lists with superscripted indices. See 'Examples'.
 }
 \examples{
-result <- AutoAff(authors, c("aff1", "aff2", "aff3", "aff4", "aff5", "aff6"))
+result <- AutoAff(X = authors,
+                  affiliation = c("aff1", "aff2", "aff3", "aff4", "aff5", "aff6"))
 result
+
+# R Markdown syntax
+result$rmd
 
 }

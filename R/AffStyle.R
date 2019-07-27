@@ -36,10 +36,11 @@
 #' @return The function returns a text string that is either ready to be pasted into your manuscript (without superscripts) or need to be copied to R Markdown and knitted (with superscripts).
 #' 
 #' @examples 
-#' result <- AutoAff(authors, c("aff1", "aff2", "aff3", "aff4", "aff5", "aff6"))
-#' 
+#' result <- AutoAff(X = authors,
+#'                   affiliation = c("aff1", "aff2", "aff3", "aff4", "aff5", "aff6"))#' 
 #' template <- "f m l, d^i^;"
-#' AffStyle(X = authors, first = "First", middle = "Middle", last = "Last", degree = "Degree", index = result$index, template = template)
+#' AffStyle(X = authors, first = "First", middle = "Middle", last = "Last",
+#'          degree = "Degree", index = result$index, template = template)
 #' 
 #' @export
 #' 

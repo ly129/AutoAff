@@ -51,9 +51,10 @@ Any other characters can be used based on the user's need. For example, spaces c
 Styles that include superscripts/subscripts require the use of R Markdown. The output for these styles are R Markdown syntax (text between ^^ will be superscipts after knitting).
 }
 \examples{
-result <- AutoAff(authors, c("aff1", "aff2", "aff3", "aff4", "aff5", "aff6"))
-
+result <- AutoAff(X = authors,
+                  affiliation = c("aff1", "aff2", "aff3", "aff4", "aff5", "aff6"))#' 
 template <- "f m l, d^i^;"
-AffStyle(X = authors, first = "First", middle = "Middle", last = "Last", degree = "Degree", index = result$index, template = template)
+AffStyle(X = authors, first = "First", middle = "Middle", last = "Last",
+         degree = "Degree", index = result$index, template = template)
 
 }

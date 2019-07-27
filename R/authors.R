@@ -9,7 +9,11 @@
 #'
 #' @format A data frame with 140 rows and 11 variables:
 #' \describe{
-#'   \item{Name}{Author's name}
+#'   \item{Name}{Author's full name}
+#'   \item{First}{Author's first name}
+#'   \item{Middle}{Author's middle name}
+#'   \item{Last}{Author's last name}
+#'   \item{Degree}{Author's degree}
 #'   \item{aff1}{First affiliation}
 #'   \item{aff2}{Second affiliation}
 #'   ...
