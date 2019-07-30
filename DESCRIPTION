@@ -5,6 +5,7 @@ Version: 1.0.0
 Author: Yi Lian
 Maintainer: Yi Lian <yi.lian@mail.mcgill.ca>
 Description: Automatic management for large number of authors and affiliations
+URL: https://github.com/ly129/AutoAff/
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
