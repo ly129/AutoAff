@@ -1,4 +1,5 @@
 # AutoAff
+[![DOI](https://zenodo.org/badge/198249623.svg)](https://zenodo.org/badge/latestdoi/198249623)
 ## Your author and affiliation manager for academic publications
 AutoAff automatically sorts authors and their affiliations and create author and affiliation list in your desired style.
 ## Author
