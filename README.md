@@ -8,3 +8,6 @@ Yi Lian < <yi.lian@mail.mcgill.ca> >
 ```r
 devtools::install_github("ly129/AutoAff")
 ```
+
+## To download .tar.gz
+<https://github.com/ly129/AutoAff/releases>
