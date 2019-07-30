@@ -1,7 +1,7 @@
 Package: AutoAff
 Type: Package
 Title: Automatic Affiliation
-Version: 0.1.0
+Version: 1.0.0
 Author: Yi Lian
 Maintainer: Yi Lian <yi.lian@mail.mcgill.ca>
 Description: Automatic management for large number of authors and affiliations
