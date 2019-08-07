@@ -11,5 +11,5 @@ Yi Lian (2019). AutoAff: Automatic Affiliation. R package version 1.0.0. doi: 10
 devtools::install_github("ly129/AutoAff")
 ```
 
-## To download .tar.gz
+## To download
 <https://github.com/ly129/AutoAff/releases>
