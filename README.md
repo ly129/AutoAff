@@ -4,7 +4,7 @@ AutoAff automatically sorts authors and their affiliations and create author and
 ## Author
 Yi Lian < <yi.lian@mail.mcgill.ca> >
 ## To cite
-Yi Lian (2019). AutoAff: Automatic Affiliation. R package version 1.0.0. doi: 10.5281/zenodo.3354640. https://github.com/ly129/AutoAff/
+Yi Lian (2019). AutoAff: Automatic Affiliation. R package version 1.0.0. doi: 10.5281/zenodo.3354640. URL: https://github.com/ly129/AutoAff/
 
 ## To install
 ```r
