@@ -13,4 +13,3 @@ devtools::install_github("ly129/AutoAff")
 
 ## To download
 <https://github.com/ly129/AutoAff/releases>
-GET /repos/ly129/AutoAff/releases/18943577
